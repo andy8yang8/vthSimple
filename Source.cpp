@@ -46,7 +46,7 @@ int main()
 	memcpy(&b1, &vptr, sizeof(long));
 	
 	b1.Test();
-	b1ptr->Test();// `HackedVtable` should be called instead of `Test`?
+	b1ptr->Test();// `HackedVtable` should be called instead of `Test`
 
 	system("pause");
 	return 0;
