@@ -1,10 +1,8 @@
 //https://stackoverflow.com/questions/1542108/how-to-hack-the-virtual-table
-//// you can get the VTable location either by dereferencing the
+// get the VTable location either by dereferencing the
 // first pointer in the object or by analyzing the compiled binary.
 
-
 #include <iostream>
-
 using namespace std;
 
 void HackedVtable()
@@ -35,7 +33,6 @@ typedef struct
 {
 	FUNPTR funptr;
 } VTable;
-
 
 int main()
 {
